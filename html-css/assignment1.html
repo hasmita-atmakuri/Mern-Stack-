@@ -10,37 +10,53 @@
         border: none;
         cursor: pointer;
         font-size: 14px;
-        height: 40px;
+        height: 36px;
         width: 110px;
         border-radius: 2px;
-        margin-right: 20px;
+        margin-right: 18px;
+				transition: opacity 0.15s;
     }
+		.button:hover{
+			opacity: 0.8;
+		}
+		.button:active{
+			opacity: 0.5;
+		}
     .join{
-        color: lightblue;
+        color: rgb(41,118,211);
         background-color: white;
         cursor: pointer;
-        font-size: 20px;
-        height: 40px;
-        width: 75px;
+        height: 36px;
+        width: 62px;
         border-radius: 2px;
-        border-color: lightblue;
-        margin-right: 20px;
+        border-color: rgb(41,118,211);
+        margin-right: 18px;
         border-style: solid;
+				border-width: 1px;
+				transition: background-color 0.15s, color 0.15s ;
     }
     .join:hover{
-        background-color: blue;
+        background-color: rgb(41,118,211);
+				color: white;
     }
+		.join:active{
+			opacity: 0.7;
+		}
     .tweet{
         color: white;
-        background-color: blue;
+        background-color: rgb(2,158,255);
         cursor: pointer;
-        font-size: 20px;
-        height: 40px;
-        width: 100px;
-        border-radius: 30px;
-        border-color: blue;
+        font-size: 15px;
+        height: 36px;
+        width: 74px;
+        border-radius: 18px;
+        border:none;
         font-weight: bold;
+				transition: box-shadow 0.15;
     }
+		.tweet:hover{
+			box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+		}
 </style>
 <!--1a-->
 <button>Click</button>
@@ -140,6 +156,17 @@
         color: white;
         height: 70px;
         width: 150px;
+        transition: opacity 0.15s;
+        cursor: pointer;
+        /*border-width: 20px;
+        border-color: red;
+        border-style: solid;*/
+    }
+    .uber:hover{
+        opacity: 0.7;
+    }
+    .uber:active{
+        opacity:0.7;
     }
     .amazon{
         background-color: rgb(255,216,20);
@@ -148,6 +175,14 @@
         height: 40px;
         width: 200px;
         font-weight: bold;
+        transition: box-shadow 0.15s, opacity 0.15s;
+        cursor: pointer;
+    }
+    .amazon:hover{
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+    }
+    .amazon:active{
+        opacity: 0.7;
     }
     .github{
         background-color: rgb(46,164,79);
@@ -157,6 +192,14 @@
         width: 130px;
         border-radius: 4px;
         font-weight: bold;
+        transition: opacity 0.15s;
+        cursor: pointer;
+    }
+    .github:hover{
+        opacity: 0.7;
+    }
+    .github:active{
+        opacity: 0.9;
     }
     .bootstrap1{
         background-color: rgb(121,82,179);
@@ -166,6 +209,13 @@
         width: 130px;
         border-radius: 3px;
         font-weight: bold;
+        cursor: pointer;
+    }
+    .bootstrap1:hover{
+        opacity: 0.7;
+    }
+    .bootstrap1:active{
+        opacity: 0.9;
     }
     .bootstrap2{
         background-color: white;
@@ -176,17 +226,31 @@
         width: 130px;
         border-radius: 3px;
         font-weight: bold;
-
+        transition: opacity 0.15s;
+        cursor: pointer;
+    }
+    .bootstrap2:hover{
+        opacity: 0.7;
+    }
+    .bootstrap2:active{
+        opacity: 0.9;
     }
     .linkedin1{
         background-color: rgb(10,102,194);
         color: white;
         border: none;
-        border-style: solid;
         height: 50px;
         width: 300px;
         border-radius: 30px;
         font-weight: bold;
+        transition: box-shadow 0.15s, opacity 0.15s;
+        cursor: pointer;
+    }
+    .linkedin1:hover{
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+    }
+    .linkedin1:active{
+        opacity: 0.9;
     }
     .linkedin2{
         background-color: white;
@@ -197,13 +261,26 @@
         width: 90px;
         border-radius: 30px;
         font-weight: bold;
+        transition: box-shadow 0.15s, opacity 0.15s;
+        cursor: pointer;
+    }
+    .linkedin2:hover{
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+    }
+    .linkedin2:active{
+        opacity: 0.8;
     }
     .hh1{
         color: rgb(0,113,113);
+        transition: color 0.15s;
+    }
+    .hh1:hover{
+        color: blueviolet;
     }
     .hh2{
         font-weight: bold;
         font-size: 25px;
+
     }
     .hh3{
         color: rgb(0,118,0);
@@ -220,6 +297,14 @@
         width: 130px;
         border: none;
         margin-right: 10px;
+        transition: box-shadow 0.15s, opacity 0.15s;
+        cursor: pointer;
+    }
+    .hh5:hover{
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+    }
+    .hh5:active{
+        opacity: 0.8;
     }
     .hh6{
         font-weight: bold;
@@ -229,5 +314,13 @@
         width: 130px;
         border: none;
         margin-right: 10px;
+        transition: box-shadow 0.15s, opacity 0.15s;
+        cursor: pointer;
+    }
+    .hh6:hover{
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+    }
+    .hh6:active{
+        opacity: 0.8;
     }
 </style>
