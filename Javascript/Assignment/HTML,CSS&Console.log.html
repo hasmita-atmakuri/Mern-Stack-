@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>HTML,CSS & Console.log</title>
+  <style>
+    .highlight {
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <ul id="listItems">
+    <li>item 1</li>
+    <li>item 2</li>
+    <li>item 3</li>
+    <li>item 4</li>
+  </ul>
+  <script>
+    const myList = document.querySelectorAll('#listItems li');
+    myList.forEach((item,index)=>{
+      console.log(item.textContent);
+
+      if(index %2===1){
+        item.classList.add('highlight');
+      }
+    });
+
+    console.log('Total items:', myList.length);
+  </script>
+</body>
+</html>
