@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+</head>
+<body>
+  <script>
+    function evaluateConditions(obj){
+      //const messages = [];
+
+      if(obj.age >18 && obj.hasLicense ===true){
+        return 'Eligible to drive';
+        //messages.push('Eligible to drive');
+      }
+      if(obj.temperature >30 && obj.humidity >70){
+        return 'Warning: High discomfort level';
+        //messages.push('Warning: High discomfort level');
+      }
+      if(obj.isRaining === true && obj.temperature1 < 0){
+        return 'Warning: Risk of ice on roads';
+        //messages.push('Warning: Risk of ice on roads');
+      }
+      if((obj.role === 'admin' || obj.role === 'editor') && obj.isActive === true){
+        return 'Access granted';
+        //messages.push('Access granted');
+      }
+      if (obj.country !== "restricted" && (obj.loginAttempts <= 3 || obj.isTrusted)) {
+        return "Login successful";
+        //messages.push('Login successful');
+      }
+      if (!obj.isVerified && obj.accountAge < 1) {
+        return "Verification required for new accounts";
+        //messages.push('Verification required for new accounts');
+      }
+      return 'conditions not met';
+
+      //To print all the messages that satisfy the conditions, we can use the following code:
+      /*
+        if (messages.length === 0) {
+          messages.push('conditions not met');
+        }
+
+        return messages;
+      */
+    }
+      const Object={
+        age:17,
+        hasLicense:true,
+        temperature:35,
+        humidity:80,
+        isRaining:true,
+        temperature1:-10,
+        role:'admin',
+        isActive:true,
+        country:'USA',
+        loginAttempts:2,
+        isTrusted:true,
+        isVerified:false,
+        accountAge:0.5,
+        };   
+
+      console.log(evaluateConditions(Object));
+  </script>
+</body>
+</html>
