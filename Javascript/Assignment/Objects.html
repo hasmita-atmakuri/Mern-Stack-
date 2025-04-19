@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Library System</title>
+</head>
+<body>
+  <script>
+    function createBook(title, author, ISBN) {
+      let isBorrowed = false;
+
+      return {
+        title,
+        author,
+        ISBN,
+        isBorrowed: () => isBorrowed,
+
+        borrow: () => {
+          if (!isBorrowed) {
+            isBorrowed = true;
+            console.log(`${title} has been borrowed.`);
+            }
+             else {
+            console.log(`${title} is already borrowed.`);
+          }
+        },
+
+        returnBook: () => {
+          if (isBorrowed) {
+            isBorrowed = false;
+            console.log(`${title} has been returned.`);
+          } else {
+            console.log(`${title} was not borrowed.`);
+          }
+        }
+      };
+    }
+
+    function createLibrary() {
+      const books = [];
+
+      return {
+        addBook: (book) => {
+          books.push(book);
+          console.log(`Added "${book.title}" to the library.`);
+        },
+
+        findBookByISBN: (isbn) => {
+          return books.find(book => book.ISBN === isbn);
+        },
+
+        listAvailableBooks: () => {
+          return books.filter(book => !book.isBorrowed());
+        },
+
+        listBorrowedBooks: () => {
+          return books.filter(book => book.isBorrowed());
+        }
+      };
+    }
+
+    const library = createLibrary();
+
+    const book1 = createBook("1984", "George Orwell", "1234567890");
+    const book2 = createBook("To Kill a Mockingbird", "Harper Lee", "0987654321");
+    const book3 = createBook("The Great Gatsby", "F. Scott Fitzgerald", "1112223334");
+
+    library.addBook(book1);
+    library.addBook(book2);
+    library.addBook(book3);
+
+    book2.borrow();
+
+    console.log("Available Books:");
+    console.log(library.listAvailableBooks());
+
+    console.log("Borrowed Books:");
+    console.log(library.listBorrowedBooks());
+
+    const foundBook = library.findBookByISBN("1234567890");
+    console.log("Found Book:", foundBook.title);
+
+    book2.returnBook();
+    
+  </script>
+</body>
+</html>
