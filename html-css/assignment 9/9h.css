@@ -1,0 +1,38 @@
+div{
+  text-align: center;
+}
+.img{
+  margin-left: 75px;
+  margin-bottom: 10px;
+  width: 200px;
+}
+.google-search{
+  border-radius: 30px;
+  height: 40px;
+  width: 500px;
+  font-size: 16px;
+  border: none;
+  box-shadow: 0px 3px 5px rgba(0,0,0,0.3);
+  margin-left: 30px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  
+}
+.b1{
+  color: black;
+  background-color: rgb(220,220,220);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: 20px;
+  border: none;
+  width: 185px;
+}
+.b2{
+  color: black;
+  background-color: rgb(220,220,220);
+  padding: 10px;
+  border: none;
+  width: 185px;
+}

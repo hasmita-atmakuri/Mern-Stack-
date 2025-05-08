@@ -1,0 +1,28 @@
+div{
+  font-family:Arial ;
+}
+.flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.container{
+  border-radius: 1px;
+  border-style: solid;
+  border-color: rgb(200, 200, 200);
+  width: 300px;
+  border-radius: 6px;
+}
+.noti{
+  background-color: blue;
+  color: white;
+  border-radius: 30px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}

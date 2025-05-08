@@ -1,0 +1,37 @@
+.grid{
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  column-gap: 20px;
+}
+.card2{
+  width: 280px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  margin-right: 15px;
+  margin-left: 5px;
+  margin-top: 15px;
+}
+.mutual{
+  color: rgb(100, 100, 100);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+.cat{
+  width: 280px;
+  height: 280px;
+}
+.name{
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+.add{
+  color: white;
+  background-color: rgb(24, 119, 242);
+  padding: 10px;
+  border: none;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}

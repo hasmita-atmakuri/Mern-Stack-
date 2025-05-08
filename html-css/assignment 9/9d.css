@@ -1,0 +1,17 @@
+div{
+  width: 480px;
+  background-color: rgb(40,40,40);
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-top: 5px;
+  font-family: Arial;
+}
+.p1{
+  font-size: 40px;
+  color: white;
+  margin-bottom: 15px;
+}
+.p2{
+  margin-top: 15px;
+  color: rgb(160,160,160);
+}

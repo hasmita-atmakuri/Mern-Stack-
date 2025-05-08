@@ -1,0 +1,28 @@
+input{
+  display: inline-block;
+  margin-bottom: 5px;
+  border-color: rgb(200,200,200);
+  border-style: solid;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  height: 50px;
+  padding-left: 16px;
+}
+.first{
+  width: 140px;
+}
+.second{
+  width: 140px;
+}
+.mail{
+  display: block;
+  width: 310px ;
+}
+button{
+  color: white;
+  width: 330px;
+  background-color: blue;
+  border: none;
+  border-radius: 10px;
+  height: 50px;
+}

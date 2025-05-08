@@ -1,0 +1,10 @@
+.name{
+  display: block;
+  margin-bottom: 5px;
+  width: 250px;
+}
+.email{
+  width: 250px;
+  margin-top: 5px;
+  display: block;
+}
