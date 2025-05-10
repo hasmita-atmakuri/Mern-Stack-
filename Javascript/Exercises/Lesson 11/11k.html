@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>11k</title>
+</head>
+<body>
+  <script>
+    function countPositives(array){
+      let cnt=0;
+      for(let i=0;i<array.length;i++){
+        if(array[i]>0)
+          cnt++;
+      }
+      return cnt;
+    }
+    const array=[-3,-5,4578,-384,75588];
+    console.log(countPositives(array));
+  </script>
+</body>
+</html>

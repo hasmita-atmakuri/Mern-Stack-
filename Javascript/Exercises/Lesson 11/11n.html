@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>11m</title>
+</head>
+<body>
+  <script>
+    function countWords(array){
+      let res={};
+      for(let i=0;i<array.length;i++){
+        let word=array[i];
+        if(!res[word]){
+          res[word]=1;
+        }
+        else{
+          res[word]++;
+        }
+      }
+      return res;
+    }
+    console.log(countWords(['thank','you','bye','of','welcome','thank']));
+  </script>
+</body>
+</html>
