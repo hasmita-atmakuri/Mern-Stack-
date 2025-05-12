@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>11w</title>
+</head>
+<body>
+  <script>
+    function findIndex(array,word){
+      for(let i=0;i<array.length;i++){
+        if(word===array[i]){
+          return i;
+        }
+      }
+      return -1;
+    }
+    function unique(array){
+      const newArray=[];
+      for(let i=0;i<array.length;i++){
+        const word=array[i];
+        if(findIndex(newArray,word)===-1){
+          newArray.push(word);
+        }
+      }
+      return newArray;
+    }
+  
+    console.log(unique(['hello','world','i','am','you','hello','world']));
+    console.log(unique(['white','blue','red','black','white']));
+  </script>
+</body>
+</html>
