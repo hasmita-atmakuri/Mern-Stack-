@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>11p</title>
+</head>
+<body>
+  <script>
+    let words=['hello', 'world', 'search', 'good','search'];
+    let indi=-1;
+    for(let i=0;i<words.length;i++){
+      if(words[i]==='search'){
+        indi=i;
+        break;
+      }
+    }
+    console.log(indi);
+
+    let strings=['not','found'];
+    let str=-1;
+    for(let i=0;i<strings.length;i++){
+      if(strings[i]==='search'){
+        str=i;
+        break;
+      }
+    }
+    console.log(str);
+  </script>
+</body>
+</html>

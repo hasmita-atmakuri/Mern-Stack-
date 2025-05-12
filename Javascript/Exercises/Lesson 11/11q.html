@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>11q</title>
+</head>
+<body>
+  <script>
+    function findIndex(array,word){
+      let indi=-1;
+      for(let i=0;i<array.length;i++){
+        if(word===array[i]){
+          indi=i;
+          break;
+        }
+      }
+      return indi;
+    }
+    console.log(findIndex(['hello','world','i','am','you'],'i'));
+    console.log(findIndex(['hello','world','i','am','you'],'you'));
+  </script>
+</body>
+</html>
