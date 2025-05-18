@@ -656,5 +656,25 @@ const products = [
       "apparel",
       "mens"
     ]
+  },
+  {
+    id: "id1",
+    image:"images/products/backpack.jpg",
+    name:"Backpack",
+    rating: {
+      stars: 4.5,
+      count: 100
+    },
+    priceCents: 2999,
+  },
+  {
+    id:"id2",
+    image:"images/products/umbrella.jpg",
+    name:"Green Umbrella",
+    rating: {
+      stars: 5,
+      count: 237
+    },
+    priceCents: 786
   }
 ];
